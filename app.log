@@ -1,0 +1,166 @@
+2025-01-19 22:10:10,223 - INFO - Model loaded successfully
+2025-01-19 22:10:10,229 - INFO - Model loaded successfully
+2025-01-19 22:10:10,269 - WARNING -  * Debugger is active!
+2025-01-19 22:10:10,281 - INFO -  * Debugger PIN: 125-196-604
+2025-01-19 22:10:10,281 - WARNING -  * Debugger is active!
+2025-01-19 22:10:10,291 - INFO -  * Debugger PIN: 125-196-604
+2025-01-19 22:10:54,773 - INFO - Model loaded successfully
+2025-01-19 22:10:54,824 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-19 22:10:54,824 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-19 22:10:54,828 - INFO -  * Restarting with stat
+2025-01-19 22:10:59,238 - INFO - Model loaded successfully
+2025-01-19 22:10:59,321 - WARNING -  * Debugger is active!
+2025-01-19 22:10:59,333 - INFO -  * Debugger PIN: 125-196-604
+2025-01-19 22:11:37,193 - INFO - Received request: {'url': 'http://example.com'}
+2025-01-19 22:11:37,196 - DEBUG - Attempting to acquire lock 2131520072944 on C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-01-19 22:11:37,202 - DEBUG - Lock 2131520072944 acquired on C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-01-19 22:11:37,211 - DEBUG - Attempting to release lock 2131520072944 on C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-01-19 22:11:37,212 - DEBUG - Lock 2131520072944 released on C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-01-19 22:11:37,513 - DEBUG - Extracted features: {'url_length': 18, 'dots_count': 1, 'https_present': 0, 'domain_length': 7, 'subdomain_length': 0}
+2025-01-19 22:11:37,524 - ERROR - Error processing request: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- domain_length
+- dots_count
+- https_present
+- subdomain_length
+- url_length
+Feature names seen at fit time, yet now missing:
+- has_https
+- has_ip
+- length
+- num_subdomains
+Traceback (most recent call last):
+  File "C:\Users\fuzai\OneDrive\Documents\phishing detection\app.py", line 70, in check_url
+    prediction = model.predict(pd.DataFrame([features]))[0]
+                 ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\ensemble\_forest.py", line 904, in predict
+    proba = self.predict_proba(X)
+  File "C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\ensemble\_forest.py", line 946, in predict_proba
+    X = self._validate_X_predict(X)
+  File "C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\ensemble\_forest.py", line 638, in _validate_X_predict
+    X = validate_data(
+        self,
+    ...<4 lines>...
+        ensure_all_finite=ensure_all_finite,
+    )
+  File "C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\validation.py", line 2919, in validate_data
+    _check_feature_names(_estimator, X, reset=reset)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\validation.py", line 2777, in _check_feature_names
+    raise ValueError(message)
+ValueError: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- domain_length
+- dots_count
+- https_present
+- subdomain_length
+- url_length
+Feature names seen at fit time, yet now missing:
+- has_https
+- has_ip
+- length
+- num_subdomains
+
+2025-01-19 22:11:37,954 - INFO - 127.0.0.1 - - [19/Jan/2025 22:11:37] "[35m[1mPOST /check-url HTTP/1.1[0m" 500 -
+2025-01-19 22:12:24,899 - INFO -  * Detected change in 'C:\\Users\\fuzai\\OneDrive\\Documents\\phishing detection\\app.py', reloading
+2025-01-19 22:12:30,947 - INFO - Model loaded successfully
+2025-01-19 22:12:30,966 - WARNING -  * Debugger is active!
+2025-01-19 22:12:30,971 - INFO -  * Debugger PIN: 125-196-604
+2025-01-19 22:12:39,033 - INFO - Model loaded successfully
+2025-01-19 22:12:39,099 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-19 22:12:39,100 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-19 22:12:39,102 - INFO -  * Restarting with stat
+2025-01-19 22:12:43,941 - INFO - Model loaded successfully
+2025-01-19 22:12:43,962 - WARNING -  * Debugger is active!
+2025-01-19 22:12:43,966 - INFO -  * Debugger PIN: 125-196-604
+2025-01-19 22:12:48,204 - INFO - Received request: {'url': 'http://example.com'}
+2025-01-19 22:12:48,207 - DEBUG - Attempting to acquire lock 2484861021424 on C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-01-19 22:12:48,216 - DEBUG - Lock 2484861021424 acquired on C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-01-19 22:12:48,226 - DEBUG - Attempting to release lock 2484861021424 on C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-01-19 22:12:48,230 - DEBUG - Lock 2484861021424 released on C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-01-19 22:12:48,460 - DEBUG - Extracted features: {'length': 18, 'num_subdomains': 1, 'has_https': 0, 'has_ip': 0, 'domain_length': 7, 'subdomain_length': 0}
+2025-01-19 22:12:48,466 - ERROR - Error processing request: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- domain_length
+- subdomain_length
+Traceback (most recent call last):
+  File "C:\Users\fuzai\OneDrive\Documents\phishing detection\app.py", line 71, in check_url
+    prediction = model.predict(pd.DataFrame([features]))[0]
+                 ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\ensemble\_forest.py", line 904, in predict
+    proba = self.predict_proba(X)
+  File "C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\ensemble\_forest.py", line 946, in predict_proba
+    X = self._validate_X_predict(X)
+  File "C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\ensemble\_forest.py", line 638, in _validate_X_predict
+    X = validate_data(
+        self,
+    ...<4 lines>...
+        ensure_all_finite=ensure_all_finite,
+    )
+  File "C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\validation.py", line 2919, in validate_data
+    _check_feature_names(_estimator, X, reset=reset)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\validation.py", line 2777, in _check_feature_names
+    raise ValueError(message)
+ValueError: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- domain_length
+- subdomain_length
+
+2025-01-19 22:12:48,478 - INFO - 127.0.0.1 - - [19/Jan/2025 22:12:48] "[35m[1mPOST /check-url HTTP/1.1[0m" 500 -
+2025-01-19 22:14:04,734 - INFO -  * Detected change in 'C:\\Users\\fuzai\\OneDrive\\Documents\\phishing detection\\app.py', reloading
+2025-01-19 22:14:05,198 - INFO -  * Detected change in 'C:\\Users\\fuzai\\OneDrive\\Documents\\phishing detection\\app.py', reloading
+2025-01-19 22:14:07,702 - INFO -  * Restarting with stat
+2025-01-19 22:14:15,635 - INFO - Model loaded successfully
+2025-01-19 22:14:15,662 - WARNING -  * Debugger is active!
+2025-01-19 22:14:15,664 - WARNING -  * Debugger is active!
+2025-01-19 22:14:15,671 - INFO -  * Debugger PIN: 125-196-604
+2025-01-19 22:14:15,671 - INFO -  * Debugger PIN: 125-196-604
+2025-01-19 22:14:16,479 - INFO - Received request: {'url': 'http://example.com'}
+2025-01-19 22:14:16,481 - DEBUG - Attempting to acquire lock 2316677754096 on C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-01-19 22:14:16,484 - DEBUG - Lock 2316677754096 acquired on C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-01-19 22:14:16,488 - DEBUG - Attempting to release lock 2316677754096 on C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-01-19 22:14:16,496 - DEBUG - Lock 2316677754096 released on C:\Users\fuzai\AppData\Local\Programs\Python\Python313\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-01-19 22:14:16,607 - DEBUG - Extracted features: {'length': 18, 'num_subdomains': 1, 'has_https': 0, 'has_ip': 0, 'domain_length': 7, 'subdomain_length': 0}
+2025-01-19 22:14:16,632 - INFO - Prediction result: {'is_phishing': False, 'features': {'length': 18, 'num_subdomains': 1, 'has_https': 0, 'has_ip': 0}}
+2025-01-19 22:14:16,634 - INFO - 127.0.0.1 - - [19/Jan/2025 22:14:16] "POST /check-url HTTP/1.1" 200 -
+2025-01-19 22:15:59,820 - INFO -  * Detected change in 'C:\\Users\\fuzai\\OneDrive\\Documents\\phishing detection\\app.py', reloading
+2025-01-19 22:15:59,951 - INFO -  * Detected change in 'C:\\Users\\fuzai\\OneDrive\\Documents\\phishing detection\\app.py', reloading
+2025-01-19 22:16:00,630 - INFO -  * Restarting with stat
+2025-01-19 22:16:07,482 - INFO - Model loaded successfully
+2025-01-19 22:16:07,482 - INFO - Model loaded successfully
+2025-01-19 22:16:07,511 - WARNING -  * Debugger is active!
+2025-01-19 22:16:07,513 - WARNING -  * Debugger is active!
+2025-01-19 22:16:07,517 - INFO -  * Debugger PIN: 125-196-604
+2025-01-19 22:16:07,517 - INFO -  * Debugger PIN: 125-196-604
+2025-01-19 22:16:14,394 - INFO - Received request: {'url': 'http://example.com'}
+2025-01-19 22:16:14,395 - DEBUG - Extracted features: {'length': 18, 'num_subdomains': 1, 'has_https': 0, 'has_ip': 0}
+2025-01-19 22:16:14,422 - INFO - Prediction result: {'is_phishing': False, 'features': {'length': 18, 'num_subdomains': 1, 'has_https': 0, 'has_ip': 0}}
+2025-01-19 22:16:14,426 - INFO - 127.0.0.1 - - [19/Jan/2025 22:16:14] "POST /check-url HTTP/1.1" 200 -
+2025-01-19 22:17:29,686 - INFO - Model loaded successfully
+2025-01-19 22:17:29,754 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-19 22:17:29,754 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-19 22:17:29,757 - INFO -  * Restarting with stat
+2025-01-19 22:17:33,350 - INFO - Model loaded successfully
+2025-01-19 22:17:33,364 - WARNING -  * Debugger is active!
+2025-01-19 22:17:33,368 - INFO -  * Debugger PIN: 125-196-604
+2025-01-19 22:17:56,998 - INFO - 127.0.0.1 - - [19/Jan/2025 22:17:56] "OPTIONS /check-url HTTP/1.1" 200 -
+2025-01-19 22:17:57,236 - INFO - Received request: {'url': 'https://github.com/fuzailmansuri/phishing-detection-extension'}
+2025-01-19 22:17:57,237 - DEBUG - Extracted features: {'length': 61, 'num_subdomains': 1, 'has_https': 1, 'has_ip': 0}
+2025-01-19 22:17:57,274 - INFO - Prediction result: {'is_phishing': False, 'features': {'length': 61, 'num_subdomains': 1, 'has_https': 1, 'has_ip': 0}}
+2025-01-19 22:17:57,276 - INFO - 127.0.0.1 - - [19/Jan/2025 22:17:57] "POST /check-url HTTP/1.1" 200 -
+2025-01-19 22:18:58,950 - INFO - 127.0.0.1 - - [19/Jan/2025 22:18:58] "OPTIONS /check-url HTTP/1.1" 200 -
+2025-01-19 22:18:59,196 - INFO - Received request: {'url': 'https://youraccount-activity.com/index.php'}
+2025-01-19 22:18:59,197 - DEBUG - Extracted features: {'length': 42, 'num_subdomains': 2, 'has_https': 1, 'has_ip': 0}
+2025-01-19 22:18:59,219 - INFO - Prediction result: {'is_phishing': False, 'features': {'length': 42, 'num_subdomains': 2, 'has_https': 1, 'has_ip': 0}}
+2025-01-19 22:18:59,221 - INFO - 127.0.0.1 - - [19/Jan/2025 22:18:59] "POST /check-url HTTP/1.1" 200 -
+2025-01-19 22:19:13,342 - INFO - 127.0.0.1 - - [19/Jan/2025 22:19:13] "OPTIONS /check-url HTTP/1.1" 200 -
+2025-01-19 22:19:13,593 - INFO - Received request: {'url': 'https://resona.pw/jp/'}
+2025-01-19 22:19:13,594 - DEBUG - Extracted features: {'length': 21, 'num_subdomains': 1, 'has_https': 1, 'has_ip': 0}
+2025-01-19 22:19:13,616 - INFO - Prediction result: {'is_phishing': False, 'features': {'length': 21, 'num_subdomains': 1, 'has_https': 1, 'has_ip': 0}}
+2025-01-19 22:19:13,617 - INFO - 127.0.0.1 - - [19/Jan/2025 22:19:13] "POST /check-url HTTP/1.1" 200 -
+2025-01-19 22:20:08,076 - INFO -  * Detected change in 'C:\\Users\\fuzai\\OneDrive\\Documents\\phishing detection\\app.py', reloading
+2025-01-19 22:20:08,879 - INFO -  * Detected change in 'C:\\Users\\fuzai\\OneDrive\\Documents\\phishing detection\\app.py', reloading

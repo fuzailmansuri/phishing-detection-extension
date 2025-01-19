@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Phishing Detector</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Phishing Detector</h1>
-  <input type="text" id="urlInput" placeholder="Enter a URL">
-  <button id="checkButton">Check URL</button>
-  <p id="result"></p>
-
-  <hr>
-
-  <button id="scanEmailsButton">Scan Emails</button>
-  <p id="emailResult"></p>
-
+  <div class="container">
+    <input type="url" id="urlInput" placeholder="Enter URL to check">
+    <button id="checkButton" disabled>Check URL</button>
+    <div class="progress">
+      <div id="progressBar"></div>
+    </div>
+    <div id="statusText"></div>
+    <div id="result"></div>
+    <button id="scanEmailsButton">Scan Emails</button>
+    <div class="progress">
+      <div id="emailProgressBar"></div>
+    </div>
+    <div id="emailResult"></div>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>
